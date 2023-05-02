@@ -93,35 +93,5 @@ let sendEmail = (e) => {
     })
 }
 
-contactForm.addEventListener('submit', sendEmail)
-
-// function checkInputs(inputs) {
-//     var filled = true;
-    
-//     inputs.forEach(function(input) {
-        
-//       if(input.value === "") {
-//           filled = false;
-//       }
-    
-//     });
-    
-//     return filled;
-    
-//   }
-
-// let button = document.querySelector('.contact .btn');
-
-// button.addEventListener('click', function(event) {
-//     event.preventDefault();
-//     let text = document.querySelector('.contact .formSucess');
-//     var inputs = document.querySelectorAll("input");
-//     if (checkInputs(inputs)) {
-//     text.style.display = 'block';
-//     }else {
-//     text.style.display = 'none';      
-//     console.log(inputs.value)  
-//     }
-//     })
-
+contactForm.addEventListener('submit', sendEmail);
   
