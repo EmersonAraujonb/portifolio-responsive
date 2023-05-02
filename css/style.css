@@ -719,6 +719,10 @@ span {
   color: var(--second-bg-color);
 }
 
+.contact-form {
+    font-size: 2rem;
+}
+
 /*Breakpointers*/
 
 @media (max-width: 1200px) {
@@ -823,6 +827,9 @@ span {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact-form {
+    font-size: 1.5rem;
+}
 }
 @media (max-width: 617px) {
   .project-container {

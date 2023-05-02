@@ -39,8 +39,9 @@ document.getElementById('current_date').innerHTML = new Date()
   .substr(0, 4);
 
 ScrollReveal({
+//   reset: true,
   distance: '80px',
-  duration: 1700,
+  duration: 2000,
   delay: 200,
 });
 
@@ -66,4 +67,61 @@ ScrollReveal().reveal(
     backDelay: 1000,
     loop: true
 })
+
+let contactForm = document.getElementById('contact-form'),  
+    contactMessage = document.getElementById('contact-message');
+    
+function resets() {
+    contactForm.reset();
+}
+
+let sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_3tvbtk1', 'template_0q6qhuk', '#contact-form', 'BMjX_mPPnRCKu8Ik6')
+    .then(() =>  {
+        contactMessage.textContent = 'Formulário enviado com sucesso!'
+        contactForm.style.color = '#089345'
+        setTimeout(() => {
+            contactMessage.textContent = '';   
+            resets();
+        },4000)
+
+    }, () => {
+        contactMessage.textContent = 'Falha ao enviar formulário!'
+        contactForm.style.color = '#ff0000'
+        
+    })
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
+// function checkInputs(inputs) {
+//     var filled = true;
+    
+//     inputs.forEach(function(input) {
+        
+//       if(input.value === "") {
+//           filled = false;
+//       }
+    
+//     });
+    
+//     return filled;
+    
+//   }
+
+// let button = document.querySelector('.contact .btn');
+
+// button.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     let text = document.querySelector('.contact .formSucess');
+//     var inputs = document.querySelectorAll("input");
+//     if (checkInputs(inputs)) {
+//     text.style.display = 'block';
+//     }else {
+//     text.style.display = 'none';      
+//     console.log(inputs.value)  
+//     }
+//     })
+
   

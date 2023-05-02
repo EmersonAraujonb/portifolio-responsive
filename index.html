@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Emerson Araújo</title>
     <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/favicon.ico"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -275,7 +281,10 @@
           <div class="project-layer">
             <h4>Web Cadastro</h4>
             <p>Crie, edite, exclua pessoas e cidades.</p>
-            <a href="https://github.com/EmersonAraujonb/project-react-typescript"><i class="bx bxl-github"></i></a>
+            <a
+              href="https://github.com/EmersonAraujonb/project-react-typescript"
+              ><i class="bx bxl-github"></i
+            ></a>
             <a href="#"><i class="bx bx-link-external"></i></a>
           </div>
         </div>
@@ -283,53 +292,56 @@
           <img src="images/project-costs.png" alt="" />
           <div class="project-layer">
             <h4>Costs</h4>
-            <p>Comece a gerenciar seus projetos agora mesmo! </p>
-            <a href="https://github.com/EmersonAraujonb/costs"><i class="bx bxl-github"></i></a>
+            <p>Comece a gerenciar seus projetos agora mesmo!</p>
+            <a href="https://github.com/EmersonAraujonb/costs"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
         </div>
         <div class="project-box">
           <img src="images/project-ecommerce.png" alt="" />
           <div class="project-layer">
             <h4>Ecommerce</h4>
-            <p>Vamos as compras?! Adicione tudo que deseja comprar ao carrinho!</p>
-            <a href="https://github.com/EmersonAraujonb/E-commerce"><i class="bx bxl-github"></i></a>
+            <p>
+              Vamos as compras?! Adicione tudo que deseja comprar ao carrinho!
+            </p>
+            <a href="https://github.com/EmersonAraujonb/E-commerce"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
     <section class="contact" id="contact">
       <h2 class="heading">Entre em <span>Contato!</span></h2>
-      <form action="https://api.staticforms.xyz/submit" method="post">
-        <input
-          type="hidden"
-          name="accessKey"
-          value="cbc5aa80-b0ff-4796-ad96-fe336c461fdd"
-        />
+      <form action="" class="contact-form" id="contact-form">
         <div class="input-box">
-          <input type="text" name="$nome" placeholder="Nome Completo" />
-          <input type="email" name="$email" placeholder="Email" />
-        </div>
-        <div class="input-box">
-          <input
-            type="number"
-            name="$numero de telefone"
-            placeholder="Número de Telefone"
-          />
           <input
             type="text"
-            name="$assunto do email"
-            placeholder="Assunto do Email"
+            name="name"
+            id="input"
+            placeholder="Nome Completo"
+            required
+          />
+          <input
+            type="email"
+            id="input"
+            name="email"
+            placeholder="Email"
+            required
           />
         </div>
         <textarea
           type="text"
-          name="$menssagem"
-          id=""
+          name="message"
+          id="input"
           cols="30"
           rows="10"
           placeholder="Escreva sua Mensagem"
+          required
         ></textarea>
-        <input type="submit" value="Enviar Mensagem" class="btn" />
+        <p class="contact-message" id="contact-message"></p>
+        <button type="submit" class="btn">Enviar</button>
       </form>
     </section>
     <footer class="footer">
@@ -373,6 +385,7 @@
     </footer>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
