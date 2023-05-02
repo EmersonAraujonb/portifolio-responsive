@@ -29,7 +29,7 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
 ---
 
-<h2>🦄 Autor</h2>
+<h2>👨 Autor</h2>
 
 <table>
   <tr>
