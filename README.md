@@ -3,9 +3,9 @@
   💻<br>Portfólio - Emerson Araújo
 </h1>
 
-![Resultado final do projeto](images/preview.png)
+![Resultado final do projeto](./images/preview.png)
 
-<h4 align="center"><a href="https://portifolio-emerson-araujo.vercel.app/">Clique para visitar o portifólio</a></h4>
+<h4 align="center"><a href="https://portifolio-emerson-araujo.vercel.app/" target="_blank">Clique para visitar o portifólio</a></h4>
 
 ## 📚 Seções
 
